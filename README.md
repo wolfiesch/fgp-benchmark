@@ -37,10 +37,12 @@ A comprehensive, reproducible benchmark comparing browser automation tools for A
 | Operation | FGP Browser | agent-browser | Playwright MCP | FGP vs MCP |
 |-----------|-------------|---------------|----------------|------------|
 | Navigate | 8ms | 23ms | 1.6s | **199.9x** |
-| Snapshot | 9ms | 21ms | 0ms | **-** |
-| Screenshot | 29ms | 33ms | 0ms | **-** |
-| Click | 17ms | 28ms | 0ms | **-** |
-| Fill | 25ms | 20ms | 0ms | **-** |
+| Snapshot | 9ms | 21ms | N/A* | **-** |
+| Screenshot | 29ms | 33ms | N/A* | **-** |
+| Click | 17ms | 28ms | N/A* | **-** |
+| Fill | 25ms | 20ms | N/A* | **-** |
+
+*MCP stdio is stateless - each call spawns a new process, so operations requiring prior navigation fail.*
 
 ## Workflow Benchmarks
 
@@ -57,18 +59,18 @@ Multi-step workflows demonstrate compound latency savings.
 
 | Feature | fgp-browser | agent-browser | playwright-mcp |
 |---------|---------------|---------------|---------------|
-| Navigate |  |  |  |
-| Snapshot |  |  |  |
-| Screenshot |  |  |  |
-| Click |  |  |  |
-| Fill |  |  |  |
-| Select |  |  |  |
-| Check |  |  |  |
-| Hover |  |  |  |
-| Scroll |  |  |  |
-| Press |  |  |  |
-| Press Combo |  |  |  |
-| Upload |  |  |  |
+| Navigate | Yes | Yes | No |
+| Snapshot | Yes | Yes | Yes |
+| Screenshot | Yes | Yes | Yes |
+| Click | Yes | No | Yes |
+| Fill | Yes | Yes | Yes |
+| Select | Yes | No | Yes |
+| Check | Yes | No | Yes |
+| Hover | Yes | No | Yes |
+| Scroll | Yes | No | Yes |
+| Press | Yes | Yes | Yes |
+| Press Combo | No | Yes | Yes |
+| Upload | Yes | Yes | Yes |
 
 - **fgp-browser:** 11/12 features (91.7%)
 - **agent-browser:** 7/12 features (58.3%)

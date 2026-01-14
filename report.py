@@ -116,13 +116,22 @@ def generate_markdown_report(report: Any) -> str:
             fgp = comp[op].get("fgp_browser", {}).get("mean_ms", 0)
             ab = comp[op].get("agent_browser", {}).get("mean_ms", 0)
             mcp = comp[op].get("playwright_mcp", {}).get("mean_ms", 0)
-            speedup = _speedup(fgp, mcp)
+
+            # MCP is stateless - operations after navigate fail because each call spawns new process
+            if op != "navigate" and mcp == 0:
+                mcp_str = "N/A*"
+                speedup = "-"
+            else:
+                mcp_str = _fmt_ms(mcp)
+                speedup = _speedup(fgp, mcp)
 
             lines.append(
                 f"| {op.replace('_', ' ').title()} | "
-                f"{_fmt_ms(fgp)} | {_fmt_ms(ab)} | {_fmt_ms(mcp)} | **{speedup}** |"
+                f"{_fmt_ms(fgp)} | {_fmt_ms(ab)} | {mcp_str} | **{speedup}** |"
             )
 
+        lines.append("")
+        lines.append("*MCP stdio is stateless - each call spawns a new process, so operations requiring prior navigation fail.*")
         lines.append("")
 
     # Workflow Benchmarks
@@ -176,7 +185,8 @@ def generate_markdown_report(report: Any) -> str:
             row = f"| {feature.replace('_', ' ').title()} |"
             for tool in tools:
                 status = matrix[tool].get(feature, "N/A")
-                symbol = {"OK": "", "N/A": "", "FAIL": "", "ERROR": ""}.get(status, "?")
+                # Use GitHub-compatible symbols
+                symbol = {"OK": "Yes", "N/A": "-", "FAIL": "No", "ERROR": "Err"}.get(status, "?")
                 row += f" {symbol} |"
             lines.append(row)
 

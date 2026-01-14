@@ -194,8 +194,8 @@ def generate_feature_parity_chart(report: Any, output_dir: Path) -> str | None:
     for i, tool in enumerate(tools):
         for j, feature in enumerate(features):
             status = matrix[tool].get(feature, "N/A")
-            symbol = {"OK": "", "N/A": "-", "FAIL": "", "ERROR": ""}.get(status, "?")
-            ax.text(j, i, symbol, ha='center', va='center', fontsize=12)
+            symbol = {"OK": "Y", "N/A": "-", "FAIL": "N", "ERROR": "!"}.get(status, "?")
+            ax.text(j, i, symbol, ha='center', va='center', fontsize=12, fontweight='bold')
 
     ax.set_title('Feature Parity Matrix')
 
