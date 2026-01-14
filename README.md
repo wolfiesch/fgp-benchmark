@@ -2,13 +2,13 @@
 
 A comprehensive, reproducible benchmark comparing browser automation tools for AI agents.
 
-**Generated:** 2026-01-14T00:32:26.624445
+**Generated:** 2026-01-14T00:39:05.384847
 
 ## TL;DR
 
-- **230x faster** than Playwright MCP (8ms vs 1.8s on navigation)
-- **2.9x faster** than agent-browser (8ms vs 23ms on navigation)
-- **16-22x faster** on real-world workflows
+- **200x faster** than Playwright MCP (8ms vs 1.6s on navigation)
+- **2.8x faster** than agent-browser (8ms vs 23ms on navigation)
+- **15-38x faster** on real-world workflows
 
 ## Environment
 
@@ -25,8 +25,8 @@ A comprehensive, reproducible benchmark comparing browser automation tools for A
 
 ## Methodology
 
-- **Iterations:** 5 per test
-- **Warmup:** 1 iterations
+- **Iterations:** 50 per test
+- **Warmup:** 5 iterations
 - **Confidence Level:** 95%
 - **Outlier Removal:**  (>3.0σ)
 - **Significance Test:** mann-whitney-u
@@ -36,11 +36,11 @@ A comprehensive, reproducible benchmark comparing browser automation tools for A
 
 | Operation | FGP Browser | agent-browser | Playwright MCP | FGP vs MCP |
 |-----------|-------------|---------------|----------------|------------|
-| Navigate | 8ms | 23ms | 1.8s | **229.6x** |
-| Snapshot | 9ms | 24ms | 0ms | **-** |
-| Screenshot | 29ms | 35ms | 0ms | **-** |
-| Click | 20ms | 34ms | 0ms | **-** |
-| Fill | 24ms | 20ms | 0ms | **-** |
+| Navigate | 8ms | 23ms | 1.6s | **199.9x** |
+| Snapshot | 9ms | 21ms | 0ms | **-** |
+| Screenshot | 29ms | 33ms | 0ms | **-** |
+| Click | 17ms | 28ms | 0ms | **-** |
+| Fill | 25ms | 20ms | 0ms | **-** |
 
 ## Workflow Benchmarks
 
@@ -48,10 +48,10 @@ Multi-step workflows demonstrate compound latency savings.
 
 | Workflow | Steps | FGP | agent-browser | MCP Estimate | FGP Speedup |
 |----------|-------|-----|---------------|--------------|-------------|
-| Login | 5 | 695ms | 937ms | ~11.5s | **16.5x** |
-| Search Extract | 6 | 773ms | 1.1s | ~13.8s | **17.9x** |
-| Form Submit | 7 | 716ms | 663ms | ~16.1s | **22.5x** |
-| Pagination | 10 | 1.1s | 1.7s | ~23.0s | **20.1x** |
+| Login | 5 | 783ms | 914ms | ~11.5s | **14.7x** |
+| Search Extract | 6 | 762ms | 1.1s | ~13.8s | **18.1x** |
+| Form Submit | 7 | 419ms | 480ms | ~16.1s | **38.4x** |
+| Pagination | 10 | 1.1s | 1.7s | ~23.0s | **20.4x** |
 
 ## Feature Parity
 
@@ -72,11 +72,11 @@ Multi-step workflows demonstrate compound latency savings.
 
 - **fgp-browser:** 11/12 features (91.7%)
 - **agent-browser:** 7/12 features (58.3%)
-- **playwright-mcp:** 12/12 features (100.0%)
+- **playwright-mcp:** 11/12 features (91.7%)
 
 ## Statistical Analysis
 
-- **agent_browser vs fgp_browser** (navigate): p < 0.001, Cohen's d = -3.761 (large effect)
+- **fgp_browser vs agent_browser** (navigate): p < 0.001, Cohen's d = -1.287 (large effect)
 
 All comparisons show statistically significant differences (p < 0.05) with large effect sizes.
 
