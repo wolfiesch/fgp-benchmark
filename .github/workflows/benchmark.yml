@@ -1,0 +1,76 @@
+name: Weekly Benchmark
+
+on:
+  schedule:
+    # Run every Monday at 6 AM UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      iterations:
+        description: 'Number of iterations per test'
+        required: false
+        default: '20'
+
+jobs:
+  benchmark:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-action@stable
+
+      - name: Install FGP Browser
+        run: cargo install fgp-browser
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install agent-browser
+        run: npm install -g @anthropic/agent-browser
+        continue-on-error: true
+
+      - name: Install Playwright MCP
+        run: npx @anthropic/playwright-mcp@latest install
+        continue-on-error: true
+
+      - name: Run benchmarks
+        run: |
+          python benchmark.py \
+            --iterations ${{ github.event.inputs.iterations || '20' }} \
+            --output results/ci_$(date +%Y%m%d_%H%M%S).json
+        env:
+          BENCHMARK_CI: true
+
+      - name: Generate charts
+        run: python -c "from visualization import generate_all_charts; generate_all_charts()"
+        continue-on-error: true
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: |
+            results/*.json
+            results/charts/*.png
+
+      - name: Update README with latest results
+        if: github.event_name == 'schedule'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add results/
+          git commit -m "chore: update benchmark results $(date +%Y-%m-%d)" || true
+          git push || true
