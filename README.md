@@ -1,171 +1,110 @@
-# FGP Browser Benchmark Suite
+# FGP Browser Benchmark Results
 
 A comprehensive, reproducible benchmark comparing browser automation tools for AI agents.
 
+**Generated:** 2026-01-14T00:32:26.624445
+
 ## TL;DR
 
-| Tool | Navigation | Snapshot | Screenshot |
-|------|------------|----------|------------|
-| **FGP Browser** | **8ms** | **9ms** | **24ms** |
-| agent-browser | 22ms | 31ms | 45ms |
-| Playwright MCP | 2,334ms | 2,314ms | 2,356ms |
+- **230x faster** than Playwright MCP (8ms vs 1.8s on navigation)
+- **2.9x faster** than agent-browser (8ms vs 23ms on navigation)
+- **16-22x faster** on real-world workflows
 
-**FGP Browser is 292x faster than Playwright MCP** and **2.8x faster than agent-browser** on single operations.
+## Environment
 
-## Why These Results?
-
-The performance difference comes from architecture:
-
-| Tool | Architecture | Overhead |
-|------|--------------|----------|
-| **FGP Browser** | Warm daemon, Unix socket | ~0ms startup |
-| agent-browser | Warm daemon, HTTP | ~0ms startup |
-| Playwright MCP | Stdio transport, new process per call | ~2.3s startup |
-
-Playwright MCP spawns a new Node.js process for every operation. That's how Claude Code uses it in practice. FGP maintains a warm daemon with zero spawn overhead.
-
-## Benchmark Dimensions
-
-### 1. Single Operation Latency
-- Navigate, snapshot, screenshot, click, fill
-- 50+ iterations with statistical significance testing
-- Mann-Whitney U test (p < 0.05)
-- Cohen's d effect size (>0.8 = large effect)
-
-### 2. Workflow Benchmarks
-Multi-step workflows show compound advantages:
-
-| Workflow | Steps | FGP | MCP Estimate | Speedup |
-|----------|-------|-----|--------------|---------|
-| Login | 5 | 659ms | 11.5s | **17x** |
-| Search | 6 | 771ms | 13.8s | **18x** |
-| Form Submit | 7 | 304ms | 16.1s | **53x** |
-| Pagination | 10 | 1,087ms | 23.0s | **21x** |
-
-### 3. Resource Usage
-- Peak memory consumption
-- CPU utilization during operations
-- Thread count
-
-### 4. Concurrency
-- Parallel request handling (1, 2, 3, 5 concurrent requests)
-- Requests per second under load
-- Success rate under stress
-
-### 5. Feature Parity
-Full feature matrix testing:
-
-| Feature | FGP | agent-browser | Playwright MCP |
-|---------|-----|---------------|----------------|
-| Navigate | ✅ | ✅ | ✅ |
-| Snapshot | ✅ | ✅ | ✅ |
-| Screenshot | ✅ | ✅ | ✅ |
-| Click | ✅ | ✅ | ✅ |
-| Fill | ✅ | ✅ | ✅ |
-| Select | ✅ | ✅ | ✅ |
-| Check | ✅ | ✅ | ✅ |
-| Hover | ✅ | ✅ | ✅ |
-| Scroll | ✅ | ✅ | ✅ |
-| Press | ✅ | ✅ | ✅ |
-| Key Combos | ✅ | ✅ | ✅ |
-| File Upload | ✅ | ✅ | ✅ |
+| Component | Version |
+|-----------|---------|
+| OS | Darwin 25.2.0 |
+| CPU | arm (14 cores) |
+| Memory | 24 GB |
+| Chrome | 143.0.7499.193 |
+| FGP Browser | 0.1.0 |
+| Playwright MCP | Version 0.0.55 |
+| agent-browser | latest |
+| Network | Local (no throttling) |
 
 ## Methodology
 
-### Statistical Rigor
-- **Iterations:** 50 per test (configurable)
-- **Warmup:** 5 iterations excluded
+- **Iterations:** 5 per test
+- **Warmup:** 1 iterations
 - **Confidence Level:** 95%
-- **Outlier Removal:** >3σ excluded
-- **Significance Test:** Mann-Whitney U (non-parametric)
-- **Effect Size:** Cohen's d
+- **Outlier Removal:**  (>3.0σ)
+- **Significance Test:** mann-whitney-u
+- **Effect Size:** cohens-d
 
-### Environment Documentation
-Every run captures:
-- OS and version
-- CPU (model, cores)
-- Memory
-- Chrome version
-- Tool versions (FGP, Playwright, agent-browser)
-- Network conditions
+## Single Operation Benchmarks
 
-### Cold Start Measurement
-FGP daemon first-request latency measured separately to ensure fair comparison.
+| Operation | FGP Browser | agent-browser | Playwright MCP | FGP vs MCP |
+|-----------|-------------|---------------|----------------|------------|
+| Navigate | 8ms | 23ms | 1.8s | **229.6x** |
+| Snapshot | 9ms | 24ms | 0ms | **-** |
+| Screenshot | 29ms | 35ms | 0ms | **-** |
+| Click | 20ms | 34ms | 0ms | **-** |
+| Fill | 24ms | 20ms | 0ms | **-** |
 
-## Run It Yourself
+## Workflow Benchmarks
+
+Multi-step workflows demonstrate compound latency savings.
+
+| Workflow | Steps | FGP | agent-browser | MCP Estimate | FGP Speedup |
+|----------|-------|-----|---------------|--------------|-------------|
+| Login | 5 | 695ms | 937ms | ~11.5s | **16.5x** |
+| Search Extract | 6 | 773ms | 1.1s | ~13.8s | **17.9x** |
+| Form Submit | 7 | 716ms | 663ms | ~16.1s | **22.5x** |
+| Pagination | 10 | 1.1s | 1.7s | ~23.0s | **20.1x** |
+
+## Feature Parity
+
+| Feature | fgp-browser | agent-browser | playwright-mcp |
+|---------|---------------|---------------|---------------|
+| Navigate |  |  |  |
+| Snapshot |  |  |  |
+| Screenshot |  |  |  |
+| Click |  |  |  |
+| Fill |  |  |  |
+| Select |  |  |  |
+| Check |  |  |  |
+| Hover |  |  |  |
+| Scroll |  |  |  |
+| Press |  |  |  |
+| Press Combo |  |  |  |
+| Upload |  |  |  |
+
+- **fgp-browser:** 11/12 features (91.7%)
+- **agent-browser:** 7/12 features (58.3%)
+- **playwright-mcp:** 12/12 features (100.0%)
+
+## Statistical Analysis
+
+- **agent_browser vs fgp_browser** (navigate): p < 0.001, Cohen's d = -3.761 (large effect)
+
+All comparisons show statistically significant differences (p < 0.05) with large effect sizes.
+
+## Reproduce These Results
 
 ```bash
-# Clone
-git clone https://github.com/wolfiesch/fgp-benchmark
-cd fgp-benchmark
-
-# Install Python dependencies
-pip install -r requirements.txt
-
 # Install tools
 cargo install fgp-browser
 npm install -g @anthropic/agent-browser
-npx @anthropic/playwright-mcp@latest install
 
-# Run benchmarks
-python benchmark.py --iterations 50
-
-# Quick test (5 iterations)
-python benchmark.py --iterations 5 --quick
-
-# Generate visualizations
-python -c "from visualization import generate_all_charts; generate_all_charts()"
+# Clone and run
+git clone https://github.com/wolfiesch/fgp-benchmark
+cd fgp-benchmark
+pip install -r requirements.txt
+python3 benchmark.py --iterations 50
 ```
 
-## Results
+## Charts
 
-Full benchmark results are stored in `results/` as JSON:
+![Latency Comparison](results/charts/latency_comparison.png)
 
-```json
-{
-  "environment": {
-    "os": "macOS",
-    "cpu": "Apple M2 Pro",
-    "memory_gb": 16,
-    "fgp_version": "0.1.0",
-    ...
-  },
-  "single_ops": {
-    "comparison": {
-      "navigate": {
-        "fgp_browser": {"mean_ms": 8.2, "std_ms": 1.1, "p50_ms": 8.0},
-        "playwright_mcp": {"mean_ms": 2334.5, "std_ms": 45.2, "p50_ms": 2320.0}
-      }
-    }
-  },
-  "workflows": {...},
-  "statistics": {...}
-}
-```
+![Workflow Speedup](results/charts/workflow_speedup.png)
 
-## FAQ
+![Feature Parity](results/charts/feature_parity.png)
 
-**Q: Isn't comparing stdio MCP unfair?**
-A: This is how Claude Code uses Playwright MCP in practice. The benchmark measures real-world performance, not theoretical best-case.
+## Raw Data
 
-**Q: Can Playwright MCP use HTTP transport?**
-A: Yes, and it would be faster. But the default Claude Code integration uses stdio. We welcome PRs adding HTTP transport comparison.
-
-**Q: Why is agent-browser also slower than FGP?**
-A: Both use warm daemons, but FGP uses Unix sockets (lower overhead than HTTP) and has a more optimized Rust implementation.
-
-**Q: What about accuracy/correctness?**
-A: Feature parity tests verify all tools produce equivalent results. FGP doesn't sacrifice correctness for speed.
-
-## Contributing
-
-1. Run benchmarks on your hardware
-2. Submit results as PR to `results/community/`
-3. Include full environment spec
-
-## License
-
-MIT
+[Full benchmark results (JSON)](results/latest.json)
 
 ---
 

@@ -1,0 +1,4242 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-01-14T00:32:26.624445",
+  "environment": {
+    "os": "Darwin",
+    "os_version": "25.2.0",
+    "cpu": "arm",
+    "cpu_cores": 14,
+    "memory_gb": 24,
+    "chrome_version": "143.0.7499.193",
+    "node_version": "25.2.1",
+    "rust_version": "1.92.0",
+    "python_version": "3.13.2",
+    "fgp_version": "0.1.0",
+    "playwright_version": "Version 0.0.55",
+    "agent_browser_version": "latest",
+    "network_type": "Local (no throttling)",
+    "timestamp": "2026-01-14T00:32:28.136530"
+  },
+  "config": {
+    "min_iterations": 5,
+    "warmup_iterations": 1,
+    "confidence_level": 0.95,
+    "outlier_removal": true,
+    "outlier_sigma": 3.0,
+    "significance_test": "mann-whitney-u",
+    "effect_size_metric": "cohens-d"
+  },
+  "single_ops": {
+    "operations": [
+      "navigate",
+      "snapshot",
+      "screenshot",
+      "click",
+      "fill"
+    ],
+    "raw_results": [
+      {
+        "tool": "fgp_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 0,
+        "latency_ms": 7.991457998286933,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 83,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 1,
+        "latency_ms": 7.904500002041459,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 83,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 2,
+        "latency_ms": 7.653374981600791,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 83,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 3,
+        "latency_ms": 7.905250007752329,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 83,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 4,
+        "latency_ms": 7.832916977349669,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 83,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 0,
+        "latency_ms": 9.032332978677005,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 10328,
+        "token_estimate": 2582,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 1,
+        "latency_ms": 8.45254200976342,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 10328,
+        "token_estimate": 2582,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 2,
+        "latency_ms": 8.338999992702156,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 10328,
+        "token_estimate": 2582,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 3,
+        "latency_ms": 8.974500000476837,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 10328,
+        "token_estimate": 2582,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 4,
+        "latency_ms": 9.373334003612399,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 10328,
+        "token_estimate": 2582,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 0,
+        "latency_ms": 27.3798750131391,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 116,
+        "token_estimate": 29,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 1,
+        "latency_ms": 36.438333976548165,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 116,
+        "token_estimate": 29,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 2,
+        "latency_ms": 23.511083039920777,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 116,
+        "token_estimate": 29,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 3,
+        "latency_ms": 32.88158302893862,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 116,
+        "token_estimate": 29,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 4,
+        "latency_ms": 24.73620802629739,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 116,
+        "token_estimate": 29,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 0,
+        "latency_ms": 23.701165977399796,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 53,
+        "token_estimate": 13,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 1,
+        "latency_ms": 24.81774997431785,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 53,
+        "token_estimate": 13,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 2,
+        "latency_ms": 16.590375045780092,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 53,
+        "token_estimate": 13,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 3,
+        "latency_ms": 16.498834011144936,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 53,
+        "token_estimate": 13,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 4,
+        "latency_ms": 16.74066699342802,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 53,
+        "token_estimate": 13,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 0,
+        "latency_ms": 21.72508300282061,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 46,
+        "token_estimate": 11,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 1,
+        "latency_ms": 25.10066598188132,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 46,
+        "token_estimate": 11,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 2,
+        "latency_ms": 24.588874948676676,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 46,
+        "token_estimate": 11,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 3,
+        "latency_ms": 24.954624997917563,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 46,
+        "token_estimate": 11,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "fgp_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 4,
+        "latency_ms": 25.008666969370097,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 46,
+        "token_estimate": 11,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 0,
+        "latency_ms": 25.43074998538941,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 65,
+        "token_estimate": 16,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 1,
+        "latency_ms": 22.416999971028417,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 65,
+        "token_estimate": 16,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 2,
+        "latency_ms": 21.573874983005226,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 65,
+        "token_estimate": 16,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 3,
+        "latency_ms": 22.06862496677786,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 65,
+        "token_estimate": 16,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 4,
+        "latency_ms": 23.333084012847394,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 65,
+        "token_estimate": 16,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 0,
+        "latency_ms": 25.33487498294562,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 5274,
+        "token_estimate": 1318,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 1,
+        "latency_ms": 23.721000005025417,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 5274,
+        "token_estimate": 1318,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 2,
+        "latency_ms": 26.610917004290968,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 5274,
+        "token_estimate": 1318,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 3,
+        "latency_ms": 22.90995797375217,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 5274,
+        "token_estimate": 1318,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "iteration": 4,
+        "latency_ms": 22.447000024840236,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 5274,
+        "token_estimate": 1318,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 0,
+        "latency_ms": 35.811458015814424,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 82,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 1,
+        "latency_ms": 38.7679580016993,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 82,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 2,
+        "latency_ms": 32.48762496514246,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 82,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 3,
+        "latency_ms": 28.12604099744931,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 82,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "iteration": 4,
+        "latency_ms": 38.31445798277855,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 82,
+        "token_estimate": 20,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 0,
+        "latency_ms": 38.33783295704052,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 1,
+        "latency_ms": 32.81104104826227,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 2,
+        "latency_ms": 33.59104198170826,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 3,
+        "latency_ms": 33.58733397908509,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "iteration": 4,
+        "latency_ms": 32.71195798879489,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 0,
+        "latency_ms": 21.126999985426664,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 1,
+        "latency_ms": 20.03537502605468,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 2,
+        "latency_ms": 19.686250016093254,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 3,
+        "latency_ms": 19.198000023607165,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "agent_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "iteration": 4,
+        "latency_ms": 19.999958982225507,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 16,
+        "token_estimate": 4,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "playwright_mcp",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 0,
+        "latency_ms": 1807.6997919706628,
+        "success": false,
+        "is_cold_start": false,
+        "payload_size": 0,
+        "token_estimate": 0,
+        "error": "Unknown error",
+        "metadata": {}
+      },
+      {
+        "tool": "playwright_mcp",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 1,
+        "latency_ms": 1814.0716669731773,
+        "success": true,
+        "is_cold_start": false,
+        "payload_size": 243,
+        "token_estimate": 70,
+        "error": null,
+        "metadata": {}
+      },
+      {
+        "tool": "playwright_mcp",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 2,
+        "latency_ms": 1664.8225000244565,
+        "success": false,
+        "is_cold_start": false,
+        "payload_size": 0,
+        "token_estimate": 0,
+        "error": "Unknown error",
+        "metadata": {}
+      },
+      {
+        "tool": "playwright_mcp",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 3,
+        "latency_ms": 1910.1704999920912,
+        "success": false,
+        "is_cold_start": false,
+        "payload_size": 0,
+        "token_estimate": 0,
+        "error": "Unknown error",
+        "metadata": {}
+      },
+      {
+        "tool": "playwright_mcp",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "iteration": 4,
+        "latency_ms": 1679.5618750038557,
+        "success": false,
+        "is_cold_start": false,
+        "payload_size": 0,
+        "token_estimate": 0,
+        "error": "Unknown error",
+        "metadata": {}
+      }
+    ],
+    "summaries": {
+      "fgp_browser_navigate": {
+        "tool": "fgp_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 7.857499993406236,
+        "median_ms": 7.904500002041459,
+        "std_dev_ms": 0.12718604176204865,
+        "min_ms": 7.653374981600791,
+        "max_ms": 7.991457998286933,
+        "p95_ms": 7.974216400180012,
+        "p99_ms": 7.988009678665549,
+        "cold_start_ms": null,
+        "warm_mean_ms": 7.857499993406236
+      },
+      "fgp_browser_snapshot": {
+        "tool": "fgp_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 8.834341797046363,
+        "median_ms": 8.974500000476837,
+        "std_dev_ms": 0.4302592269294046,
+        "min_ms": 8.338999992702156,
+        "max_ms": 9.373334003612399,
+        "p95_ms": 9.30513379862532,
+        "p99_ms": 9.359693962614983,
+        "cold_start_ms": null,
+        "warm_mean_ms": 8.834341797046363
+      },
+      "fgp_browser_screenshot": {
+        "tool": "fgp_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 28.98941661696881,
+        "median_ms": 27.3798750131391,
+        "std_dev_ms": 5.507446674275212,
+        "min_ms": 23.511083039920777,
+        "max_ms": 36.438333976548165,
+        "p95_ms": 35.726983787026256,
+        "p99_ms": 36.29606393864378,
+        "cold_start_ms": null,
+        "warm_mean_ms": 28.98941661696881
+      },
+      "fgp_browser_click": {
+        "tool": "fgp_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 19.66975840041414,
+        "median_ms": 16.74066699342802,
+        "std_dev_ms": 4.209245897262964,
+        "min_ms": 16.498834011144936,
+        "max_ms": 24.81774997431785,
+        "p95_ms": 24.594433174934238,
+        "p99_ms": 24.773086614441127,
+        "cold_start_ms": null,
+        "warm_mean_ms": 19.66975840041414
+      },
+      "fgp_browser_fill": {
+        "tool": "fgp_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 24.275583180133253,
+        "median_ms": 24.954624997917563,
+        "std_dev_ms": 1.4389643974740127,
+        "min_ms": 21.72508300282061,
+        "max_ms": 25.10066598188132,
+        "p95_ms": 25.082266179379076,
+        "p99_ms": 25.09698602138087,
+        "cold_start_ms": null,
+        "warm_mean_ms": 24.275583180133253
+      },
+      "agent_browser_navigate": {
+        "tool": "agent_browser",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 22.964666783809662,
+        "median_ms": 22.416999971028417,
+        "std_dev_ms": 1.5210546769135334,
+        "min_ms": 21.573874983005226,
+        "max_ms": 25.43074998538941,
+        "p95_ms": 25.011216790881008,
+        "p99_ms": 25.34684334648773,
+        "cold_start_ms": null,
+        "warm_mean_ms": 22.964666783809662
+      },
+      "agent_browser_snapshot": {
+        "tool": "agent_browser",
+        "operation": "snapshot",
+        "test_case": "snapshot_quotes",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 24.204749998170882,
+        "median_ms": 23.721000005025417,
+        "std_dev_ms": 1.7368799291879269,
+        "min_ms": 22.447000024840236,
+        "max_ms": 26.610917004290968,
+        "p95_ms": 26.3557086000219,
+        "p99_ms": 26.559875323437154,
+        "cold_start_ms": null,
+        "warm_mean_ms": 24.204749998170882
+      },
+      "agent_browser_screenshot": {
+        "tool": "agent_browser",
+        "operation": "screenshot",
+        "test_case": "screenshot_simple",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 34.70150799257681,
+        "median_ms": 35.811458015814424,
+        "std_dev_ms": 4.442956690809882,
+        "min_ms": 28.12604099744931,
+        "max_ms": 38.7679580016993,
+        "p95_ms": 38.67725799791515,
+        "p99_ms": 38.74981800094247,
+        "cold_start_ms": null,
+        "warm_mean_ms": 34.70150799257681
+      },
+      "agent_browser_click": {
+        "tool": "agent_browser",
+        "operation": "click",
+        "test_case": "click_input",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 34.207841590978205,
+        "median_ms": 33.58733397908509,
+        "std_dev_ms": 2.345795155462992,
+        "min_ms": 32.71195798879489,
+        "max_ms": 38.33783295704052,
+        "p95_ms": 37.38847476197407,
+        "p99_ms": 38.14796131802723,
+        "cold_start_ms": null,
+        "warm_mean_ms": 34.207841590978205
+      },
+      "agent_browser_fill": {
+        "tool": "agent_browser",
+        "operation": "fill",
+        "test_case": "fill_input",
+        "count": 5,
+        "success_rate": 1.0,
+        "mean_ms": 20.009316806681454,
+        "median_ms": 19.999958982225507,
+        "std_dev_ms": 0.7093287956590411,
+        "min_ms": 19.198000023607165,
+        "max_ms": 21.126999985426664,
+        "p95_ms": 20.908674993552268,
+        "p99_ms": 21.083334987051785,
+        "cold_start_ms": null,
+        "warm_mean_ms": 20.009316806681454
+      },
+      "playwright_mcp_navigate": {
+        "tool": "playwright_mcp",
+        "operation": "navigate",
+        "test_case": "navigate_simple",
+        "count": 5,
+        "success_rate": 0.2,
+        "mean_ms": 1814.0716669731773,
+        "median_ms": 1814.0716669731773,
+        "std_dev_ms": 0.0,
+        "min_ms": 1814.0716669731773,
+        "max_ms": 1814.0716669731773,
+        "p95_ms": 1814.0716669731773,
+        "p99_ms": 1814.0716669731773,
+        "cold_start_ms": null,
+        "warm_mean_ms": 1814.0716669731773
+      },
+      "playwright_mcp_snapshot": {
+        "tool": "unknown",
+        "operation": "unknown",
+        "test_case": "unknown",
+        "count": 0,
+        "success_rate": 0.0,
+        "mean_ms": 0.0,
+        "median_ms": 0.0,
+        "std_dev_ms": 0.0,
+        "min_ms": 0.0,
+        "max_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "cold_start_ms": null,
+        "warm_mean_ms": 0.0
+      },
+      "playwright_mcp_screenshot": {
+        "tool": "unknown",
+        "operation": "unknown",
+        "test_case": "unknown",
+        "count": 0,
+        "success_rate": 0.0,
+        "mean_ms": 0.0,
+        "median_ms": 0.0,
+        "std_dev_ms": 0.0,
+        "min_ms": 0.0,
+        "max_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "cold_start_ms": null,
+        "warm_mean_ms": 0.0
+      },
+      "playwright_mcp_click": {
+        "tool": "unknown",
+        "operation": "unknown",
+        "test_case": "unknown",
+        "count": 0,
+        "success_rate": 0.0,
+        "mean_ms": 0.0,
+        "median_ms": 0.0,
+        "std_dev_ms": 0.0,
+        "min_ms": 0.0,
+        "max_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "cold_start_ms": null,
+        "warm_mean_ms": 0.0
+      },
+      "playwright_mcp_fill": {
+        "tool": "unknown",
+        "operation": "unknown",
+        "test_case": "unknown",
+        "count": 0,
+        "success_rate": 0.0,
+        "mean_ms": 0.0,
+        "median_ms": 0.0,
+        "std_dev_ms": 0.0,
+        "min_ms": 0.0,
+        "max_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "cold_start_ms": null,
+        "warm_mean_ms": 0.0
+      }
+    },
+    "comparison": {
+      "navigate": {
+        "fgp_browser": {
+          "mean_ms": 7.9,
+          "median_ms": 7.9,
+          "p95_ms": 8.0,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 23.0,
+          "median_ms": 22.4,
+          "p95_ms": 25.0,
+          "success_rate": 100.0
+        },
+        "playwright_mcp": {
+          "mean_ms": 1814.1,
+          "median_ms": 1814.1,
+          "p95_ms": 1814.1,
+          "success_rate": 20.0
+        }
+      },
+      "snapshot": {
+        "fgp_browser": {
+          "mean_ms": 8.8,
+          "median_ms": 9.0,
+          "p95_ms": 9.3,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 24.2,
+          "median_ms": 23.7,
+          "p95_ms": 26.4,
+          "success_rate": 100.0
+        },
+        "playwright_mcp": {
+          "mean_ms": 0.0,
+          "median_ms": 0.0,
+          "p95_ms": 0.0,
+          "success_rate": 0.0
+        }
+      },
+      "screenshot": {
+        "fgp_browser": {
+          "mean_ms": 29.0,
+          "median_ms": 27.4,
+          "p95_ms": 35.7,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 34.7,
+          "median_ms": 35.8,
+          "p95_ms": 38.7,
+          "success_rate": 100.0
+        },
+        "playwright_mcp": {
+          "mean_ms": 0.0,
+          "median_ms": 0.0,
+          "p95_ms": 0.0,
+          "success_rate": 0.0
+        }
+      },
+      "click": {
+        "fgp_browser": {
+          "mean_ms": 19.7,
+          "median_ms": 16.7,
+          "p95_ms": 24.6,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 34.2,
+          "median_ms": 33.6,
+          "p95_ms": 37.4,
+          "success_rate": 100.0
+        },
+        "playwright_mcp": {
+          "mean_ms": 0.0,
+          "median_ms": 0.0,
+          "p95_ms": 0.0,
+          "success_rate": 0.0
+        }
+      },
+      "fill": {
+        "fgp_browser": {
+          "mean_ms": 24.3,
+          "median_ms": 25.0,
+          "p95_ms": 25.1,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 20.0,
+          "median_ms": 20.0,
+          "p95_ms": 20.9,
+          "success_rate": 100.0
+        },
+        "playwright_mcp": {
+          "mean_ms": 0.0,
+          "median_ms": 0.0,
+          "p95_ms": 0.0,
+          "success_rate": 0.0
+        }
+      }
+    }
+  },
+  "workflows": {
+    "workflows": [
+      "login",
+      "search_extract",
+      "form_submit",
+      "pagination"
+    ],
+    "raw_results": [
+      {
+        "workflow": "login",
+        "tool": "fgp_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 117.70175001583993,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 25.147541018668562,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 31.621666974388063,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 23.722250014543533,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 8.752625028137118,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 715.1735000079498,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "fgp_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 100.74354201788083,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 21.521249960642308,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 32.119582989253104,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 22.18337496742606,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 7.403041992802173,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 691.1120000295341,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "fgp_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 100.68216698709875,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 28.827166999690235,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 28.782041976228356,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 17.099708027672023,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 7.606957980897278,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 693.0732920300215,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "fgp_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 100.76129098888487,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 24.937374982982874,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 29.17558397166431,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 15.672832960262895,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 7.929208048153669,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 688.5539169888943,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "fgp_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 112.16329201124609,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 19.744958030059934,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 29.18566600419581,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 15.756874985527247,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 7.271167007274926,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 689.0894579701126,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "agent_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 137.9655419732444,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 26.992416998837143,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 23.290291021112353,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 209.97249998617917,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 29.21537501970306,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 935.971790982876,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "agent_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 138.1497920374386,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 29.643042013049126,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 28.593334020115435,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 237.2922920039855,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 28.076875023543835,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 970.9554159780964,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "agent_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 117.5817500334233,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 29.421582992654294,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 25.600874971132725,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 222.9540830012411,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 29.988750000484288,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 935.5198330013081,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "agent_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 118.21666598552838,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 25.93612502096221,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 24.38458299729973,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 210.03970800666139,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 29.88433401333168,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 917.6750410115346,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "agent_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 117.57262499304488,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 26.795041980221868,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 25.00262501416728,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 213.76954205334187,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 30.546292022336274,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 922.5096249720082,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "login",
+        "tool": "playwright_mcp",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1951.7224589944817,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1951.7486249678768,
+        "step_count": 1,
+        "success": false,
+        "error": "Step 1 failed: Unknown error"
+      },
+      {
+        "workflow": "login",
+        "tool": "playwright_mcp",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1911.6834169835784,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1911.7036249954253,
+        "step_count": 1,
+        "success": false,
+        "error": "Step 1 failed: Unknown error"
+      },
+      {
+        "workflow": "login",
+        "tool": "playwright_mcp",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1722.4207089748234,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1722.4270409788005,
+        "step_count": 1,
+        "success": false,
+        "error": "Step 1 failed: Unknown error"
+      },
+      {
+        "workflow": "login",
+        "tool": "playwright_mcp",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1738.4523329674266,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1738.4578750352375,
+        "step_count": 1,
+        "success": false,
+        "error": "Step 1 failed: Unknown error"
+      },
+      {
+        "workflow": "login",
+        "tool": "playwright_mcp",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1800.9360840078443,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_username",
+            "latency_ms": 869.3173750070855,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_password",
+            "latency_ms": 863.9639579923823,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_submit",
+            "latency_ms": 831.5772500354797,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "verify_snapshot",
+            "latency_ms": 1798.9980829879642,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 6667.893375037238,
+        "step_count": 5,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "fgp_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 222.93779195751995,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 11.37237495277077,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 19.642625004053116,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 20.31254197936505,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 208.75837496714666,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 11.616959003731608,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 802.5801670155488,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "fgp_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 201.94666599854827,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 10.332041012588888,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 18.112750025466084,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 8.774208021350205,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 205.37533302558586,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 11.504291964229196,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 763.1842499831691,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "fgp_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 194.24520805478096,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 9.9318340071477,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 10.002124996390194,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 8.44783300999552,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 214.9446249823086,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 11.768208001740277,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 759.4252080307342,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "fgp_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 198.07020801817998,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 10.114584001712501,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 19.012374978046864,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 8.459332981146872,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 218.41054101241753,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 12.589666002895683,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 774.2482500034384,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "fgp_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 196.4829579810612,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 9.987166966311634,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 19.878457998856902,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 8.422874961979687,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 208.33583403145894,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 10.94824995379895,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 764.137624995783,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "agent_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 238.93945798045024,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 36.26158303814009,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 248.8836669945158,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 28.428542020265013,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 202.48654100578278,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 28.37029204238206,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1093.0628339992836,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "agent_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 209.11245798924938,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 30.763541988562793,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 237.07995901349932,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 28.947249986231327,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 214.72329198149964,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 29.702208004891872,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1057.8185410122387,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "agent_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 209.1402080259286,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 28.26091699535027,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 243.11466596554965,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 27.665083995088935,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 205.49324998864904,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 30.549707997124642,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1054.2972080293112,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "agent_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 209.87175003392622,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 28.66374998120591,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 243.55437501799315,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 28.15670898417011,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 207.00741600012407,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 32.236583007033914,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1054.2024999740534,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "agent_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 220.52199998870492,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_initial",
+            "latency_ms": 31.890709011349827,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_author",
+            "latency_ms": 240.98491697805002,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_author",
+            "latency_ms": 28.98287499556318,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "navigate_back",
+            "latency_ms": 214.24458298133686,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_final",
+            "latency_ms": 29.889874975197017,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1076.5720409690402,
+        "step_count": 6,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "playwright_mcp",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 2145.6631250330247,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 2145.680000016,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "playwright_mcp",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1658.2492499728687,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1658.2568329758942,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "playwright_mcp",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1729.6344579663128,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1729.6393339638598,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "playwright_mcp",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1668.1384579860605,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1668.1434159982018,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "search_extract",
+        "tool": "playwright_mcp",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1664.048166014254,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1664.0522920060903,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "fgp_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1124.4661249802448,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 20.488042035140097,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 41.40433395514265,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 27.28799998294562,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 6.37716701021418,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 28.476084000431,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 26.768915995489806,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1275.2998329815455,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "fgp_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 857.4895419878885,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 29.31962499860674,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 21.720958000514656,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 28.320291021373123,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 5.630417028442025,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 29.247749946080148,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 26.219625025987625,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 997.9753750376403,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "fgp_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 101.77404095884413,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 27.205417049117386,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 21.26941701862961,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 28.917749994434416,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 5.566666950471699,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 28.792499972041696,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 26.380416995380074,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 239.9350839550607,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "fgp_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 596.3045000098646,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 27.07429201109335,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 22.919333016034216,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 28.867334011010826,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 5.777332989964634,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 27.78437500819564,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 25.87345795473084,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 734.6281250356697,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "fgp_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 192.8433749708347,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 25.942000036593527,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 24.57058400614187,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 27.936332975514233,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 6.064542045351118,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 28.061249991878867,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 26.3521249871701,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 331.8049579975195,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "agent_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 347.68379101296887,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 29.55441700760275,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 22.438667016103864,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 22.798542049713433,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 35.74887500144541,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 22.24604197544977,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 37.9772080341354,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 518.4698340017349,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "agent_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1210.0785420043394,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 26.333541027270257,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 22.019166965037584,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 22.72145904134959,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 36.54008300509304,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 22.573334048502147,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 37.91941603412852,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1378.2120000105351,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "agent_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 350.92612501466647,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 27.306292031425983,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 23.007084033451974,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 21.757417009212077,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 42.78541699750349,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 22.00050000101328,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 34.933875023853034,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 522.7380829746835,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "agent_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 114.10954198800027,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 31.047291005961597,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 24.014708993490785,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 23.246166005264968,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 28.78962503746152,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 21.786083991173655,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 37.213416013401,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 280.23333300370723,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "agent_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 456.0318330186419,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_name",
+            "latency_ms": 27.383333013858646,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_phone",
+            "latency_ms": 22.874082962516695,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_email",
+            "latency_ms": 23.30641698790714,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "check_topping",
+            "latency_ms": 23.869208001997322,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "fill_comments",
+            "latency_ms": 22.855208022519946,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "screenshot",
+            "latency_ms": 38.143667043186724,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 614.4875420141034,
+        "step_count": 7,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "playwright_mcp",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1952.3461250355467,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1952.359749993775,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "playwright_mcp",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1708.0583330243826,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1708.0638339975849,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "playwright_mcp",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1702.9420000035316,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1702.9479159973562,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "playwright_mcp",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1700.4667919827625,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1700.471332995221,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "form_submit",
+        "tool": "playwright_mcp",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1695.674374990631,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1695.6801660126075,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "fgp_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 240.32183300005272,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 11.119707953184843,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 34.90408300422132,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 10.936707956716418,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 20.882250042632222,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 10.046707990113646,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 13.358374999370426,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 10.17179200425744,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 14.793624985031784,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 9.531999996397644,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1204.5025419793092,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "fgp_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 194.59566695149988,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 10.255625005811453,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 11.094083019997925,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 10.229832958430052,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 10.45091700507328,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 9.75033303257078,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 11.712666018866003,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 9.963499964214861,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 12.852707994170487,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 9.814874967560172,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1109.4037080183625,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "fgp_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 201.38841698644683,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 9.76616598200053,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 13.050250010564923,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 10.99104096647352,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 13.055125018581748,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 9.861457976512611,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 17.18095800606534,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 9.562582999933511,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 17.896959034260362,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 9.660375013481826,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1135.9760829946026,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "fgp_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 194.25729097565636,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 10.234665998723358,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 15.179833048023283,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 10.947957984171808,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 15.991041029337794,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 9.999583009630442,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 16.802125028334558,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 9.843042003922164,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 15.13170899124816,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 9.644584031775594,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1135.4960839962587,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "fgp_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 192.94783397344872,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 9.670584055129439,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 19.810541009064764,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 11.133374995552003,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 24.870249966625124,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 9.907790983561426,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 14.06183303333819,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 9.687000012490898,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 8.942916989326477,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 9.890958026517183,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1138.441041985061,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "agent_browser",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 239.80099998880178,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 41.29587498027831,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 136.65104104438797,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 31.765124993398786,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 140.2675419813022,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 30.064166989177465,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 154.92025000276044,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 30.062792007811368,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 119.96662494493648,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 31.855959037784487,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1771.9916250207461,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "agent_browser",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 227.04299999168143,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 29.02016695588827,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 137.84504198702052,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 27.87891699699685,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 142.19516701996326,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 33.1759590189904,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 145.40608401875943,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 31.605124997440726,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 129.63062501512468,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 29.888999997638166,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1743.3232920011505,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "agent_browser",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 232.6955000171438,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 29.797750001307577,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 125.015708967112,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 29.94733297964558,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 129.67950000893325,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 30.24483402259648,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 146.96916594402865,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 30.157625034917146,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 128.25741595588624,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 29.50000000419095,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1727.7774999965914,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "agent_browser",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 207.73458399344236,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 29.184792016167194,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 133.93424998503178,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 32.272999989800155,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 146.2839160230942,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 31.139375001657754,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 124.04162500752136,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 29.81241699308157,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 133.7036250042729,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 34.94045900879428,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1718.5362500022165,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "agent_browser",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 220.7535420311615,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page1",
+            "latency_ms": 32.03137498348951,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_2",
+            "latency_ms": 132.25866697030142,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page2",
+            "latency_ms": 32.371708017308265,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_3",
+            "latency_ms": 126.68016698444262,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page3",
+            "latency_ms": 34.61245895596221,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_4",
+            "latency_ms": 125.87695801630616,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page4",
+            "latency_ms": 33.69758400367573,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "click_next_5",
+            "latency_ms": 128.83837497793138,
+            "success": true,
+            "error": null
+          },
+          {
+            "step_name": "snapshot_page5",
+            "latency_ms": 31.30808298010379,
+            "success": true,
+            "error": null
+          }
+        ],
+        "total_ms": 1710.2940419572406,
+        "step_count": 10,
+        "success": true,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "playwright_mcp",
+        "iteration": 0,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 2040.1720840018243,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 2040.1884579914622,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "playwright_mcp",
+        "iteration": 1,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1845.6710409955122,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1845.6760830013081,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "playwright_mcp",
+        "iteration": 2,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1991.7767500155605,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1991.7860419955105,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "playwright_mcp",
+        "iteration": 3,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1923.3001669635996,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1923.3077500248328,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      },
+      {
+        "workflow": "pagination",
+        "tool": "playwright_mcp",
+        "iteration": 4,
+        "steps": [
+          {
+            "step_name": "navigate",
+            "latency_ms": 1817.49329197919,
+            "success": false,
+            "error": "Unknown error"
+          }
+        ],
+        "total_ms": 1817.499292024877,
+        "step_count": 1,
+        "success": false,
+        "error": null
+      }
+    ],
+    "summaries": {
+      "fgp_browser_login": {
+        "tool": "fgp_browser",
+        "workflow": "login",
+        "step_count": 5,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 695.4004334053025,
+        "median_ms": 691.1120000295341,
+        "min_ms": 688.5539169888943,
+        "max_ms": 715.1735000079498,
+        "std_dev_ms": 11.196914850254409,
+        "mcp_estimate_ms": 11500,
+        "speedup_vs_mcp": 16.53723444445629
+      },
+      "agent_browser_login": {
+        "tool": "agent_browser",
+        "workflow": "login",
+        "step_count": 5,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 936.5263411891647,
+        "median_ms": 935.5198330013081,
+        "min_ms": 917.6750410115346,
+        "max_ms": 970.9554159780964,
+        "std_dev_ms": 20.847791414108986,
+        "mcp_estimate_ms": 11500,
+        "speedup_vs_mcp": 12.279419696191084
+      },
+      "playwright_mcp_login": {
+        "tool": "playwright_mcp",
+        "workflow": "login",
+        "step_count": 5,
+        "iterations": 5,
+        "success_rate": 0.2,
+        "mean_ms": 6667.893375037238,
+        "median_ms": 6667.893375037238,
+        "min_ms": 6667.893375037238,
+        "max_ms": 6667.893375037238,
+        "std_dev_ms": 0,
+        "mcp_estimate_ms": 11500,
+        "speedup_vs_mcp": 1.7246826476039407
+      },
+      "fgp_browser_search_extract": {
+        "tool": "fgp_browser",
+        "workflow": "search_extract",
+        "step_count": 6,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 772.7151000057347,
+        "median_ms": 764.137624995783,
+        "min_ms": 759.4252080307342,
+        "max_ms": 802.5801670155488,
+        "std_dev_ms": 17.573447191873825,
+        "mcp_estimate_ms": 13800,
+        "speedup_vs_mcp": 17.859104862707593
+      },
+      "agent_browser_search_extract": {
+        "tool": "agent_browser",
+        "workflow": "search_extract",
+        "step_count": 6,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 1067.1906247967854,
+        "median_ms": 1057.8185410122387,
+        "min_ms": 1054.2024999740534,
+        "max_ms": 1093.0628339992836,
+        "std_dev_ms": 17.176653597471304,
+        "mcp_estimate_ms": 13800,
+        "speedup_vs_mcp": 12.931148081091695
+      },
+      "fgp_browser_form_submit": {
+        "tool": "fgp_browser",
+        "workflow": "form_submit",
+        "step_count": 7,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 715.9286750014871,
+        "median_ms": 734.6281250356697,
+        "min_ms": 239.9350839550607,
+        "max_ms": 1275.2998329815455,
+        "std_dev_ms": 437.8689962463182,
+        "mcp_estimate_ms": 16100,
+        "speedup_vs_mcp": 22.488273709621364
+      },
+      "agent_browser_form_submit": {
+        "tool": "agent_browser",
+        "workflow": "form_submit",
+        "step_count": 7,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 662.8281584009528,
+        "median_ms": 522.7380829746835,
+        "min_ms": 280.23333300370723,
+        "max_ms": 1378.2120000105351,
+        "std_dev_ms": 418.615041388201,
+        "mcp_estimate_ms": 16100,
+        "speedup_vs_mcp": 24.289855215023792
+      },
+      "fgp_browser_pagination": {
+        "tool": "fgp_browser",
+        "workflow": "pagination",
+        "step_count": 10,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 1144.7638917947188,
+        "median_ms": 1135.9760829946026,
+        "min_ms": 1109.4037080183625,
+        "max_ms": 1204.5025419793092,
+        "std_dev_ms": 35.433547653271454,
+        "mcp_estimate_ms": 23000,
+        "speedup_vs_mcp": 20.09147926909316
+      },
+      "agent_browser_pagination": {
+        "tool": "agent_browser",
+        "workflow": "pagination",
+        "step_count": 10,
+        "iterations": 5,
+        "success_rate": 1.0,
+        "mean_ms": 1734.384541795589,
+        "median_ms": 1727.7774999965914,
+        "min_ms": 1710.2940419572406,
+        "max_ms": 1771.9916250207461,
+        "std_dev_ms": 24.338074597759206,
+        "mcp_estimate_ms": 23000,
+        "speedup_vs_mcp": 13.261188303828144
+      }
+    },
+    "comparison": {
+      "login": {
+        "fgp_browser": {
+          "mean_ms": 695.0,
+          "step_count": 5,
+          "speedup_vs_mcp": 16.5,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 937.0,
+          "step_count": 5,
+          "speedup_vs_mcp": 12.3,
+          "success_rate": 100.0
+        },
+        "playwright_mcp": {
+          "mean_ms": 6668.0,
+          "step_count": 5,
+          "speedup_vs_mcp": 1.7,
+          "success_rate": 20.0
+        }
+      },
+      "search_extract": {
+        "fgp_browser": {
+          "mean_ms": 773.0,
+          "step_count": 6,
+          "speedup_vs_mcp": 17.9,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 1067.0,
+          "step_count": 6,
+          "speedup_vs_mcp": 12.9,
+          "success_rate": 100.0
+        }
+      },
+      "form_submit": {
+        "fgp_browser": {
+          "mean_ms": 716.0,
+          "step_count": 7,
+          "speedup_vs_mcp": 22.5,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 663.0,
+          "step_count": 7,
+          "speedup_vs_mcp": 24.3,
+          "success_rate": 100.0
+        }
+      },
+      "pagination": {
+        "fgp_browser": {
+          "mean_ms": 1145.0,
+          "step_count": 10,
+          "speedup_vs_mcp": 20.1,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "mean_ms": 1734.0,
+          "step_count": 10,
+          "speedup_vs_mcp": 13.3,
+          "success_rate": 100.0
+        }
+      }
+    }
+  },
+  "resources": {
+    "summaries": {
+      "fgp_browser": {
+        "peak_memory_mb": 0,
+        "avg_memory_mb": 0,
+        "peak_cpu_percent": 0,
+        "avg_cpu_percent": 0,
+        "thread_count": 0,
+        "samples": 0,
+        "note": "Could not get process ID"
+      },
+      "agent_browser": {
+        "peak_memory_mb": 0,
+        "avg_memory_mb": 0,
+        "peak_cpu_percent": 0,
+        "avg_cpu_percent": 0,
+        "thread_count": 0,
+        "samples": 0,
+        "note": "Could not get process ID"
+      },
+      "playwright_mcp": {
+        "peak_memory_mb": 0,
+        "avg_memory_mb": 0,
+        "peak_cpu_percent": 0,
+        "avg_cpu_percent": 0,
+        "thread_count": 0,
+        "samples": 0,
+        "note": "Could not get process ID"
+      }
+    }
+  },
+  "concurrency": {
+    "summaries": {
+      "fgp_browser": {
+        "parallel_1": {
+          "parallel_requests": 1,
+          "total_time_ms": 92.5,
+          "requests_per_second": 10.82,
+          "success_rate": 100.0,
+          "individual_times_ms": [
+            85.9
+          ]
+        },
+        "parallel_2": {
+          "parallel_requests": 2,
+          "total_time_ms": 451.9,
+          "requests_per_second": 4.43,
+          "success_rate": 100.0,
+          "individual_times_ms": [
+            408.9,
+            451.5
+          ]
+        },
+        "parallel_3": {
+          "parallel_requests": 3,
+          "total_time_ms": 774.8,
+          "requests_per_second": 3.87,
+          "success_rate": 100.0,
+          "individual_times_ms": [
+            329.2,
+            371.7,
+            772.6
+          ]
+        },
+        "parallel_5": {
+          "parallel_requests": 5,
+          "total_time_ms": 2170.5,
+          "requests_per_second": 2.3,
+          "success_rate": 100.0,
+          "individual_times_ms": [
+            48.8,
+            969.9,
+            1164.3,
+            1580.0,
+            2164.4
+          ]
+        }
+      },
+      "agent_browser": {
+        "parallel_1": {
+          "parallel_requests": 1,
+          "total_time_ms": 88.8,
+          "requests_per_second": 11.27,
+          "success_rate": 100.0,
+          "individual_times_ms": [
+            88.5
+          ]
+        },
+        "parallel_2": {
+          "parallel_requests": 2,
+          "total_time_ms": 30.0,
+          "requests_per_second": 66.65,
+          "success_rate": 50.0,
+          "individual_times_ms": [
+            24.0,
+            29.6
+          ]
+        },
+        "parallel_3": {
+          "parallel_requests": 3,
+          "total_time_ms": 234.2,
+          "requests_per_second": 12.81,
+          "success_rate": 33.3,
+          "individual_times_ms": [
+            22.9,
+            22.3,
+            231.2
+          ]
+        },
+        "parallel_5": {
+          "parallel_requests": 5,
+          "total_time_ms": 569.5,
+          "requests_per_second": 8.78,
+          "success_rate": 20.0,
+          "individual_times_ms": [
+            28.1,
+            28.0,
+            26.6,
+            27.6,
+            564.3
+          ]
+        }
+      },
+      "playwright_mcp": {
+        "parallel_1": {
+          "parallel_requests": 1,
+          "total_time_ms": 1986.1,
+          "requests_per_second": 0.5,
+          "success_rate": 0.0,
+          "individual_times_ms": [
+            1985.7
+          ]
+        },
+        "parallel_2": {
+          "parallel_requests": 2,
+          "total_time_ms": 3244.3,
+          "requests_per_second": 0.62,
+          "success_rate": 0.0,
+          "individual_times_ms": [
+            1824.4,
+            3243.9
+          ]
+        },
+        "parallel_3": {
+          "parallel_requests": 3,
+          "total_time_ms": 4200.3,
+          "requests_per_second": 0.71,
+          "success_rate": 0.0,
+          "individual_times_ms": [
+            1830.2,
+            2533.0,
+            4199.9
+          ]
+        },
+        "parallel_5": {
+          "parallel_requests": 5,
+          "total_time_ms": 5615.5,
+          "requests_per_second": 0.89,
+          "success_rate": 20.0,
+          "individual_times_ms": [
+            2061.9,
+            3053.0,
+            3573.4,
+            5220.7,
+            5615.1
+          ]
+        }
+      }
+    },
+    "by_parallelism": {
+      "parallel_1": {
+        "fgp_browser": {
+          "rps": 10.82,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "rps": 11.27,
+          "success_rate": 100.0
+        },
+        "playwright_mcp": {
+          "rps": 0.5,
+          "success_rate": 0.0
+        }
+      },
+      "parallel_2": {
+        "fgp_browser": {
+          "rps": 4.43,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "rps": 66.65,
+          "success_rate": 50.0
+        },
+        "playwright_mcp": {
+          "rps": 0.62,
+          "success_rate": 0.0
+        }
+      },
+      "parallel_3": {
+        "fgp_browser": {
+          "rps": 3.87,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "rps": 12.81,
+          "success_rate": 33.3
+        },
+        "playwright_mcp": {
+          "rps": 0.71,
+          "success_rate": 0.0
+        }
+      },
+      "parallel_5": {
+        "fgp_browser": {
+          "rps": 2.3,
+          "success_rate": 100.0
+        },
+        "agent_browser": {
+          "rps": 8.78,
+          "success_rate": 20.0
+        },
+        "playwright_mcp": {
+          "rps": 0.89,
+          "success_rate": 20.0
+        }
+      }
+    }
+  },
+  "feature_parity": {
+    "features": [
+      "navigate",
+      "snapshot",
+      "screenshot",
+      "click",
+      "fill",
+      "select",
+      "check",
+      "hover",
+      "scroll",
+      "press",
+      "press_combo",
+      "upload"
+    ],
+    "matrix": {
+      "fgp_browser": {
+        "navigate": "OK",
+        "snapshot": "OK",
+        "screenshot": "OK",
+        "click": "OK",
+        "fill": "OK",
+        "select": "OK",
+        "check": "OK",
+        "hover": "OK",
+        "scroll": "OK",
+        "press": "OK",
+        "press_combo": "FAIL",
+        "upload": "OK"
+      },
+      "agent_browser": {
+        "navigate": "OK",
+        "snapshot": "OK",
+        "screenshot": "OK",
+        "click": "FAIL",
+        "fill": "OK",
+        "select": "FAIL",
+        "check": "FAIL",
+        "hover": "FAIL",
+        "scroll": "FAIL",
+        "press": "OK",
+        "press_combo": "OK",
+        "upload": "OK"
+      },
+      "playwright_mcp": {
+        "navigate": "OK",
+        "snapshot": "OK",
+        "screenshot": "OK",
+        "click": "OK",
+        "fill": "OK",
+        "select": "OK",
+        "check": "OK",
+        "hover": "OK",
+        "scroll": "OK",
+        "press": "OK",
+        "press_combo": "OK",
+        "upload": "OK"
+      }
+    },
+    "details": {
+      "fgp_browser": {
+        "press_combo": "error: unexpected argument '--key' found\n\n  tip: to pass '--key' as a value, use '-- --key'\n\nUsage: browser-gateway press-combo [OPTIONS] <KEY>\n\nFor more information, try '--help'.\n"
+      },
+      "agent_browser": {
+        "click": "\u001b[31m\u2717\u001b[0m Selector \"input[type='checkbox']\" matched 2 elements. Run 'snapshot' to get updated refs, or use a more specific CSS selector.\n",
+        "select": "\u001b[31m\u2717\u001b[0m Validation error: values: Invalid input\n",
+        "check": "\u001b[31m\u2717\u001b[0m Selector \"input[type='checkbox']\" matched 2 elements. Run 'snapshot' to get updated refs, or use a more specific CSS selector.\n",
+        "hover": "\u001b[31m\u2717\u001b[0m Selector \"div.figure\" matched 3 elements. Run 'snapshot' to get updated refs, or use a more specific CSS selector.\n",
+        "scroll": "\u001b[31m\u2717\u001b[0m Validation error: direction: Invalid enum value. Expected 'up' | 'down' | 'left' | 'right', received '0,500'\n"
+      },
+      "playwright_mcp": {}
+    },
+    "summary": {
+      "fgp_browser": {
+        "passed": 11,
+        "total": 12,
+        "percentage": 91.7
+      },
+      "agent_browser": {
+        "passed": 7,
+        "total": 12,
+        "percentage": 58.3
+      },
+      "playwright_mcp": {
+        "passed": 12,
+        "total": 12,
+        "percentage": 100.0
+      }
+    }
+  },
+  "statistics": {
+    "methodology": {
+      "iterations": 5,
+      "warmup": 1,
+      "confidence_level": 0.95,
+      "outlier_removal": true,
+      "outlier_sigma": 3.0,
+      "significance_test": "mann-whitney-u",
+      "effect_size_metric": "cohens-d"
+    },
+    "comparisons": {
+      "fill_agent_browser_vs_fgp_browser": {
+        "comparison": "agent_browser vs fgp_browser",
+        "mann_whitney_u": 0.0,
+        "p_value": 0.009023,
+        "significant": true,
+        "cohens_d": -3.761,
+        "effect_size": "large",
+        "agent_browser_mean": 20.0,
+        "fgp_browser_mean": 24.3,
+        "agent_browser_ci_95": [
+          19.4,
+          20.6
+        ],
+        "fgp_browser_ci_95": [
+          23.0,
+          25.5
+        ]
+      },
+      "screenshot_agent_browser_vs_fgp_browser": {
+        "comparison": "agent_browser vs fgp_browser",
+        "mann_whitney_u": 5.0,
+        "p_value": 0.117185,
+        "significant": false,
+        "cohens_d": 1.142,
+        "effect_size": "large",
+        "agent_browser_mean": 34.7,
+        "fgp_browser_mean": 29.0,
+        "agent_browser_ci_95": [
+          30.8,
+          38.6
+        ],
+        "fgp_browser_ci_95": [
+          24.2,
+          33.8
+        ]
+      },
+      "navigate_playwright_mcp_vs_agent_browser": {
+        "comparison": "playwright_mcp vs agent_browser",
+        "mann_whitney_u": 0.0,
+        "p_value": 0.143235,
+        "significant": false,
+        "cohens_d": 1177.543,
+        "effect_size": "large",
+        "playwright_mcp_mean": 1814.1,
+        "agent_browser_mean": 23.0,
+        "playwright_mcp_ci_95": [
+          1814.1,
+          1814.1
+        ],
+        "agent_browser_ci_95": [
+          21.6,
+          24.3
+        ]
+      },
+      "navigate_playwright_mcp_vs_fgp_browser": {
+        "comparison": "playwright_mcp vs fgp_browser",
+        "mann_whitney_u": 0.0,
+        "p_value": 0.143235,
+        "significant": false,
+        "cohens_d": 14201.355,
+        "effect_size": "large",
+        "playwright_mcp_mean": 1814.1,
+        "fgp_browser_mean": 7.9,
+        "playwright_mcp_ci_95": [
+          1814.1,
+          1814.1
+        ],
+        "fgp_browser_ci_95": [
+          7.7,
+          8.0
+        ]
+      },
+      "navigate_agent_browser_vs_fgp_browser": {
+        "comparison": "agent_browser vs fgp_browser",
+        "mann_whitney_u": 0.0,
+        "p_value": 0.009023,
+        "significant": true,
+        "cohens_d": 13.997,
+        "effect_size": "large",
+        "agent_browser_mean": 23.0,
+        "fgp_browser_mean": 7.9,
+        "agent_browser_ci_95": [
+          21.6,
+          24.3
+        ],
+        "fgp_browser_ci_95": [
+          7.7,
+          8.0
+        ]
+      },
+      "snapshot_agent_browser_vs_fgp_browser": {
+        "comparison": "agent_browser vs fgp_browser",
+        "mann_whitney_u": 0.0,
+        "p_value": 0.009023,
+        "significant": true,
+        "cohens_d": 12.148,
+        "effect_size": "large",
+        "agent_browser_mean": 24.2,
+        "fgp_browser_mean": 8.8,
+        "agent_browser_ci_95": [
+          22.7,
+          25.7
+        ],
+        "fgp_browser_ci_95": [
+          8.5,
+          9.2
+        ]
+      },
+      "click_agent_browser_vs_fgp_browser": {
+        "comparison": "agent_browser vs fgp_browser",
+        "mann_whitney_u": 0.0,
+        "p_value": 0.009023,
+        "significant": true,
+        "cohens_d": 4.267,
+        "effect_size": "large",
+        "agent_browser_mean": 34.2,
+        "fgp_browser_mean": 19.7,
+        "agent_browser_ci_95": [
+          32.2,
+          36.3
+        ],
+        "fgp_browser_ci_95": [
+          16.0,
+          23.4
+        ]
+      }
+    }
+  }
+}
