@@ -294,7 +294,7 @@ def generate_twitter_chart(report: Any, output_dir: Path) -> str | None:
         ax2.grid(True, alpha=0.3, axis='x')
 
     plt.suptitle(
-        'FGP Browser: 292x Faster Than Playwright MCP',
+        'FGP Browser: 200x Faster Than Playwright MCP',
         fontsize=16,
         fontweight='bold',
         y=1.02,
